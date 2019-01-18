@@ -12,7 +12,7 @@ class QuotesDisplay extends Component {
     }
 
     fetchQuote(id){
-        axios.get(`api/quotes/${id}`)
+        axios.get(`/api/quotes/${id}`)
             .then(response => this.setState({ quote: response.data })
             .catch(error => console.error(error))
         )
